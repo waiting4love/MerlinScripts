@@ -1,0 +1,8 @@
+#!/bin/sh
+
+CONFIG="$1"
+
+/jffs/scripts/dontShareOther.sh < "$CONFIG" > /tmp/smb2.conf
+cp /tmp/smb2.conf "$CONFIG"
+rm /tmp/smb2.conf
+

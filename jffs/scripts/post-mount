@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# set swapfile
+if [ -f "$1/swapfile" ]; then
+swapon "$1/swapfile"
+fi
+
+# load jffs to USB
+/jffs/scripts/jffs2u.sh $1
+
