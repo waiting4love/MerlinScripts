@@ -92,6 +92,6 @@ if [ -z $(echo "$0" | grep "unmount") ]; then
    sync
    sleep 1
    echo 3 > /proc/sys/vm/drop_caches
-   cru a FreeMem 0 6 * * * "echo 3 > /proc/sys/vm/drop_caches"
+   # cru a FreeMem 0 6 * * * "echo 3 > /proc/sys/vm/drop_caches"
 fi
 
