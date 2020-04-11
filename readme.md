@@ -45,7 +45,6 @@ sleep 3
 sync
 sleep 1
 echo 3 > /proc/sys/vm/drop_caches
-cru a FreeMem 0 6 * * * "echo 3 > /proc/sys/vm/drop_caches"
 ```
 
 在`/jffs/scripts/post-mount`中调用:
