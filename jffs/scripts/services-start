@@ -1,3 +1,3 @@
 #!/bin/sh
 
-cru a FreeMem "0 */4 * * * sync && echo 3 > /proc/sys/vm/drop_caches"
+cru a FreeMem "0 */4 * * * /jffs/scripts/free-mem.sh"
