@@ -1,5 +1,4 @@
 #!/bin/sh
 
 cru a FreeMem "0 */4 * * * /jffs/scripts/free-mem.sh"
-cru a Redial "20 3 */2 * * service restart_wan"
-
+cru a Redial "20 3 */2 * * service restart_wan && ip -6 neighbor flush dev br0"
